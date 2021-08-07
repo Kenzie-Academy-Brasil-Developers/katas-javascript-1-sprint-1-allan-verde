@@ -1,32 +1,41 @@
 function oneThroughTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
-    
+  let meuRetorno1 = []
+  let incre1 = 1
+  while (incre1 <= 20){
+    meuRetorno1.push(incre1)
+    incre1++
+  }
+
+  return meuRetorno1
 }
 
-//call function oneThroughTwenty
+console.log(oneThroughTwenty())
 
 function evensToTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
-  
+  let meuRetorno2 = []
+  let incre2 = 2
+  while (incre2 <= 20) {
+    meuRetorno2.push(incre2)
+    incre2 += 2
+  }  
+
+  return meuRetorno2
 }
 
-//call function evensToTwenty
+console.log(evensToTwenty())
 
 function oddsToTwenty() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
-   
+  let meuRetorno3 = []
+  let incre3 = 1
+  while (incre3 < 20) {
+    meuRetorno3.push(incre3)
+    incre3 += 2
+  }
+
+  return meuRetorno3
 }
 
-//call function oddsToTwenty
+console.log(oddsToTwenty())
 
 function multiplesOfFive() {
     
