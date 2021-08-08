@@ -1,103 +1,141 @@
 function oneThroughTwenty() {
-  let meuRetorno1 = []
-  let incre1 = 1
-  while (incre1 <= 20){
-    meuRetorno1.push(incre1)
-    incre1++
+  let meuRetorno = []
+  let incre = 1
+
+  while (incre <= 20){
+    meuRetorno.push(incre)
+    incre++
   }
 
-  return meuRetorno1
+  return meuRetorno
 }
 
 console.log(oneThroughTwenty())
 
 function evensToTwenty() {
-  let meuRetorno2 = []
-  let incre2 = 2
-  while (incre2 <= 20) {
-    meuRetorno2.push(incre2)
-    incre2 += 2
+  let meuRetorno = []
+  let incre = 2
+  
+  while (incre <= 20) {
+    meuRetorno.push(incre)
+    incre += 2
   }  
 
-  return meuRetorno2
+  return meuRetorno
 }
 
 console.log(evensToTwenty())
 
 function oddsToTwenty() {
-  let meuRetorno3 = []
-  let incre3 = 1
-  while (incre3 < 20) {
-    meuRetorno3.push(incre3)
-    incre3 += 2
+  let meuRetorno = []
+  let incre = 1
+  
+  while (incre < 20) {
+    meuRetorno.push(incre)
+    incre += 2
   }
 
-  return meuRetorno3
+  return meuRetorno
 }
 
 console.log(oddsToTwenty())
 
 function multiplesOfFive() {
+  let meuRetorno = []
+  let incre = 1
+  
+  while (incre <= 100) {
+    if (incre % 5 === 0) {
+      meuRetorno.push(incre)
+    }
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+    incre++
+  }
 
+  return meuRetorno
 }
 
-//call function multiplesOfFive
+console.log(multiplesOfFive())
 
 function squareNumbers() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
+  let meuRetorno = []
+  let incre = 1
+  const expoente = 1/2
+  let resBooleano = 0
+  
+  while (incre <= 100) {
+    resBooleano = Number.isInteger(Math.pow(incre, expoente)) // A variável resBooleano recebe true ou false, dependendo do resultado da raíz quadrada(em forma de potência, elevado a const expoente) da variável incre seja um número inteiro ou não.
+    if (resBooleano === true) {
+      meuRetorno.push(incre)
+    }
+    incre++
+  }
+
+  return meuRetorno
 }
 
-//call function squareNumbers
+console.log(squareNumbers())
 
 function countingBackwards() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let meuRetorno = []
+  for (let incre = 20; incre >= 1; incre--) {
+    meuRetorno.push(incre)
+  }
+
+  return meuRetorno
 }
 
-//call function countingBackwards
+console.log(countingBackwards())
 
 function evenNumbersBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+    let meuRetorno = []
+    for (let incre = 20; incre >= 2; incre -= 2) {
+      meuRetorno.push(incre)      
+    }
+
+    return meuRetorno
 }
 
-//call function evenNumbersBackwards
+console.log(evenNumbersBackwards())
 
 function oddNumbersBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let meuRetorno = []
+  for (let incre = 19; incre >= 1; incre -= 2) {
+    meuRetorno.push(incre)
+  }
+
+  return meuRetorno
 }
 
-//call function oddNumbersBackwards
+console.log(oddNumbersBackwards())
 
 function multiplesOfFiveBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+    let meuRetorno = []
+    for (let incre = 100; incre >= 1; incre--) {
+      if (incre % 5 === 0) {
+        meuRetorno.push(incre)
+      }
+    }
+
+    return meuRetorno
 }
 
-//call function multiplesOfFiveBackwards
+console.log(multiplesOfFiveBackwards())
 
 function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let meuRetorno = []
+  let incre = 100
+  const expoente = 1/2
+  let resBooleano = false
+  while (incre >= 1) {
+    resBooleano = Number.isInteger(Math.pow(incre, expoente)) // A variável resBooleano recebe true ou false, dependendo do resultado da raíz quadrada(em forma de potência, elevado a const expoente) da variável incre seja um número inteiro ou não.
+    if (resBooleano === true) {
+      meuRetorno.push(incre)
+    }
+    incre--
+  }
+
+  return meuRetorno
 }
 
-//call function squareNumbersBackwards
+console.log(squareNumbersBackwards())
